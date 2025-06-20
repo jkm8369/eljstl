@@ -15,12 +15,16 @@ public class Servlet10Controller extends HttpServlet {
 
 	//url 파라미터에 따라서 변경되는거 확인
 	/*
-	 localhost:8088/eljstl/10?color=1 
+	 localhost:8080/eljstl/10?color=1 
 	 */
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("10");
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/10_color_jstl.jsp");
+		
+		
+		
+		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/10.jsp");
 		rd.forward(request, response);
 
 	}
